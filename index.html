@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png" />
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Frontend Mentor | Multi-step form</title>
+
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Namale Fatuma</a>.
+  </div> -->
+
+    <div class="container">
+      <div class="hero">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="274"
+          height="568"
+          fill="none"
+          viewBox="0 0 274 568">
+          <rect width="274" height="568" fill="#483EFF" rx="10" />
+          <mask
+            id="a"
+            width="274"
+            height="568"
+            x="0"
+            y="0"
+            maskUnits="userSpaceOnUse"
+            style="mask-type: alpha">
+            <rect width="274" height="568" fill="#fff" rx="10" />
+          </mask>
+          <g mask="url(#a)">
+            <path
+              fill="#6259FF"
+              fill-rule="evenodd"
+              d="M-34.692 543.101C3.247 632.538 168.767 685.017 211.96 612.52c43.194-72.497-66.099-85.653-104.735-160.569-38.635-74.916-68.657-121.674-124.482-104.607-55.824 17.068-55.375 106.32-17.436 195.757Z"
+              clip-rule="evenodd" />
+            <path
+              fill="#F9818E"
+              fill-rule="evenodd"
+              d="M233.095 601.153c60.679-28.278 92.839-143.526 41.875-171.528-50.965-28.003-57.397 47.579-108.059 75.987-50.662 28.408-82.14 50.207-69.044 88.241 13.096 38.034 74.549 35.578 135.228 7.3Z"
+              clip-rule="evenodd" />
+            <path
+              stroke="#fff"
+              stroke-linecap="round"
+              stroke-linejoin="bevel"
+              stroke-width="5"
+              d="m165.305 469.097 10.607-10.806M209.461 474.581l-12.506-10.503M187.56 488.991l-6.908 14.798" />
+            <path
+              fill="#FFAF7E"
+              d="M.305 546.891c37.003 0 67-29.997 67-67s-29.997-67-67-67-67 29.997-67 67 29.997 67 67 67Z" />
+          </g>
+        </svg>
+        <div class="step-container">
+          <!-- <div class="step"></div> -->
+          <div class="info-1" id="step1">
+            <h5>1</h5>
+            <div class="info">
+              <p>STEP 1</p>
+              <p>YOUR INFO</p>
+            </div>
+          </div>
+          <div class="info-1" id="step2">
+            <h5>2</h5>
+            <div class="info">
+              <p>STEP 2</p>
+              <p>SELECT PLAN</p>
+            </div>
+          </div>
+          <div class="info-1" id="step3">
+            <h5>3</h5>
+            <div class="info">
+              <p>STEP 3</p>
+              <p>ADD-ONS</p>
+            </div>
+          </div>
+          <div class="info-1" id="step4">
+            <h5>4</h5>
+            <div class="info">
+              <p>STEP 4</p>
+              <p>SUMMARY</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="user-info">
+        <!-- <div> -->
+        <h3>Personal info</h3>
+        <p>Please provide your name, email address and phone number</p>
+        <form action="" class="step-form">
+          <fieldset>
+            <label for="name">Name</label>
+            <input type="text" placeholder="e.g.Stephen King" />
+          </fieldset>
+          <fieldset>
+            <label for="email">Email Address</label>
+            <input type="email" placeholder="e.g.stephenking@lorem.com" />
+          </fieldset>
+          <fieldset>
+            <label for="phone-number">Phone Number</label>
+            <input type="text" placeholder="e.g.+1 234 457 890" />
+          </fieldset>
+        </form>
+        <button>Next Step</button>
+        <!-- </div> -->
+      </div>
+    </div>
+    <script src="/script.js"></script>
+  </body>
+</html>
