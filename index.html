@@ -3,8 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-
     <link
       rel="icon"
       type="image/png"
@@ -13,23 +11,8 @@
     <link rel="stylesheet" href="styles.css" />
 
     <title>Frontend Mentor | Multi-step form</title>
-
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
   <body>
-    <!-- <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Namale Fatuma</a>.
-  </div> -->
-
     <div class="container">
       <div class="hero">
         <svg
@@ -72,29 +55,28 @@
           </g>
         </svg>
         <div class="step-container">
-          <!-- <div class="step"></div> -->
-          <div class="info-1" id="step1">
+          <div class="info-1 active" id="1">
             <h5>1</h5>
             <div class="info">
               <p>STEP 1</p>
               <p>YOUR INFO</p>
             </div>
           </div>
-          <div class="info-1" id="step2">
+          <div class="info-1" id="2">
             <h5>2</h5>
             <div class="info">
               <p>STEP 2</p>
               <p>SELECT PLAN</p>
             </div>
           </div>
-          <div class="info-1" id="step3">
+          <div class="info-1" id="3">
             <h5>3</h5>
             <div class="info">
               <p>STEP 3</p>
               <p>ADD-ONS</p>
             </div>
           </div>
-          <div class="info-1" id="step4">
+          <div class="info-1" id="4">
             <h5>4</h5>
             <div class="info">
               <p>STEP 4</p>
@@ -105,25 +87,100 @@
       </div>
 
       <div class="user-info">
-        <!-- <div> -->
-        <h3>Personal info</h3>
-        <p>Please provide your name, email address and phone number</p>
-        <form action="" class="step-form">
-          <fieldset>
-            <label for="name">Name</label>
-            <input type="text" placeholder="e.g.Stephen King" />
-          </fieldset>
-          <fieldset>
-            <label for="email">Email Address</label>
-            <input type="email" placeholder="e.g.stephenking@lorem.com" />
-          </fieldset>
-          <fieldset>
-            <label for="phone-number">Phone Number</label>
-            <input type="text" placeholder="e.g.+1 234 457 890" />
-          </fieldset>
-        </form>
-        <button>Next Step</button>
-        <!-- </div> -->
+        <div class="step-content active" data-step="1">
+          <h3>Personal info</h3>
+          <p>Please provide your name, email address and phone number</p>
+          <form action="" class="step-form">
+            <fieldset>
+              <label for="name">Name</label>
+              <input type="text" placeholder="e.g.Stephen King" />
+            </fieldset>
+            <fieldset>
+              <label for="email">Email Address</label>
+              <input type="email" placeholder="e.g.stephenking@lorem.com" />
+            </fieldset>
+            <fieldset>
+              <label for="phone-number">Phone Number</label>
+              <input type="text" placeholder="e.g.+1 234 457 890" />
+            </fieldset>
+          </form>
+        </div>
+
+        <div class="step-content" data-step="2">
+          <h3>Select Your plan</h3>
+          <p>You have the option of monthly or yearly billing</p>
+          <div class="container1">
+            <div id="contain" class="active">
+              <img src="./assets/images/icon-arcade.svg" alt="Arcade" />
+              <h6>Arcade</h6>
+              <p>$9/mo</p>
+            </div>
+            <div id="contain">
+              <img src="./assets/images/icon-advanced.svg" alt="Arcade" />
+              <!-- <div class="arcade"> -->
+              <h6>Advanced</h6>
+              <p>$12/mo</p>
+              <!-- </div> -->
+            </div>
+            <div id="contain">
+              <img src="./assets/images/icon-pro.svg" alt="Pro" />
+              <!-- <div class="arcade"> -->
+              <h6>Pro</h6>
+              <p>$15/mo</p>
+              <!-- </div> -->
+            </div>
+          </div>
+          <div class="subscribe">
+            <h6>Monthly</h6>
+            <img src="./assets//images/icon-advanced.svg" alt="" />
+            <p>Yearly</p>
+          </div>
+        </div>
+
+        <div class="step-content" data-step="3">
+          <h3>Pick Add-Ons</h3>
+          <p>Add-ons help enhance your gaming experience</p>
+
+          <div class="pick-ons">
+            <div class="pick-content active">
+              <input type="checkbox" checked />
+              <div class="service1">
+                <h4>Online Service</h4>
+                <p>Access to multiplayer games</p>
+              </div>
+
+              <p class="price">+$1/mo</p>
+            </div>
+            <div class="pick-content active">
+              <input type="checkbox" checked />
+              <div class="service1">
+                <h4>Larger storage</h4>
+                <p>Extra 1TB of clod save</p>
+              </div>
+
+              <p class="price">+$2/mo</p>
+            </div>
+            <div class="pick-content">
+              <input type="checkbox" />
+              <div class="service1">
+                <h4>Customizable Profile</h4>
+                <p>Custome theme for your profile</p>
+              </div>
+
+              <p class="price">+$2/mo</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="step-content" data-step="4">
+          <h3>Finishing Up</h3>
+          <p>Double-check everything looks oksy before confirming</p>
+        </div>
+
+        <div class="buttons">
+          <button class="btn" id="back" type="button">Go Back</button>
+          <button class="btn" id="next" type="button">Next</button>
+        </div>
       </div>
     </div>
     <script src="/script.js"></script>
