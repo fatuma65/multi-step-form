@@ -19,4 +19,4 @@ Thanks for checking out this front-end coding challenge.
 
 ## Deployment
 
-Live view of the project https://fatuma65.github.io/multi-step-form/
+Live view of the project https://multi-step-form-delta-orpin.vercel.app/
