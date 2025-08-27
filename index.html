@@ -92,16 +92,16 @@
           <p>Please provide your name, email address and phone number</p>
           <form action="" class="step-form">
             <fieldset>
-              <label for="name">Name</label>
-              <input type="text" placeholder="e.g.Stephen King" />
+              <label for="name">Name <span>*</span></label>
+              <input type="text" placeholder="e.g.Stephen King" required id="name"/>
             </fieldset>
             <fieldset>
-              <label for="email">Email Address</label>
-              <input type="email" placeholder="e.g.stephenking@lorem.com" />
+              <label for="email">Email Address <span>*</span></label>
+              <input type="email" placeholder="e.g.stephenking@lorem.com" required id="email" />
             </fieldset>
             <fieldset>
-              <label for="phone-number">Phone Number</label>
-              <input type="text" placeholder="e.g.+1 234 457 890" />
+              <label for="phone-number">Phone Number <span>*</span></label>
+              <input type="text" placeholder="e.g.+1 234 457 890"  required id="phone-number"/>
             </fieldset>
           </form>
         </div>
@@ -110,24 +110,20 @@
           <h3>Select Your plan</h3>
           <p>You have the option of monthly or yearly billing</p>
           <div class="container1">
-            <div id="contain" class="active">
+            <div id="contain-1" class="contain active" data-plan="Arcade">
               <img src="./assets/images/icon-arcade.svg" alt="Arcade" />
               <h6>Arcade</h6>
               <p>$9/mo</p>
             </div>
-            <div id="contain">
-              <img src="./assets/images/icon-advanced.svg" alt="Arcade" />
-              <!-- <div class="arcade"> -->
+            <div id="contain-2" class="contain" data-plan="Advanced">
+              <img src="./assets/images/icon-advanced.svg" alt="Advanced" />
               <h6>Advanced</h6>
               <p>$12/mo</p>
-              <!-- </div> -->
             </div>
-            <div id="contain">
+            <div id="contain-3" class="contain" data-plan="Pro">
               <img src="./assets/images/icon-pro.svg" alt="Pro" />
-              <!-- <div class="arcade"> -->
               <h6>Pro</h6>
               <p>$15/mo</p>
-              <!-- </div> -->
             </div>
           </div>
           <div class="subscribe">
@@ -142,8 +138,8 @@
           <p>Add-ons help enhance your gaming experience</p>
 
           <div class="pick-ons">
-            <div class="pick-content active">
-              <input type="checkbox" checked />
+            <div class="pick-content active" data-addon="Service">
+              <input type="checkbox" checked name="pick-addons">
               <div class="service1">
                 <h4>Online Service</h4>
                 <p>Access to multiplayer games</p>
@@ -151,8 +147,8 @@
 
               <p class="price">+$1/mo</p>
             </div>
-            <div class="pick-content active">
-              <input type="checkbox" checked />
+            <div class="pick-content active" data-addon="Larger Storage">
+              <input type="checkbox" checked class="required_input" name="pick-addons"/>
               <div class="service1">
                 <h4>Larger storage</h4>
                 <p>Extra 1TB of clod save</p>
@@ -160,8 +156,8 @@
 
               <p class="price">+$2/mo</p>
             </div>
-            <div class="pick-content">
-              <input type="checkbox" />
+            <div class="pick-content" data-addon="Customizable Profile">
+              <input type="checkbox" name="pick-addons" />
               <div class="service1">
                 <h4>Customizable Profile</h4>
                 <p>Custome theme for your profile</p>
