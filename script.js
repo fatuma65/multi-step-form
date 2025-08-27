@@ -1,4 +1,5 @@
-let currentPage = 1;
+document.addEventListener( 'DOMContentLoaded', function () { 
+  let currentPage = 1;
 // get the step content from the DOM
 const infoChecked = document.querySelectorAll(".info-1");
 const userInfo = document.querySelector(".user-info");
@@ -179,3 +180,15 @@ function toogleAddons() {
     });
   });
 }
+
+if(window.innerWidth <= 540) {
+  document.querySelector('svg').style.display = 'none'
+  const image = document.querySelectorAll('.contain')
+  image.forEach((element) => {
+    let secondElement = element.querySelector('h6')
+    const container = document.createElement('div')
+    container.append(secondElement, element.lastElementChild)
+    element.insertAdjacentElement('beforeend', container)
+  })
+}
+})
